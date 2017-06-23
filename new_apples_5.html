@@ -1,7 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Contact Us</title>	
+<title>Contact Us</title>
+<script>  
+window.onblur = function () {
+    document.title = "Come Back!";
+}
+setInterval(function() {
+  document.title = "Contact Us";
+}, 5000);   
+</script> 
+<script>
+window.onfocus = function () { 
+  document.title = "Contact Us";       
+}
+</script> 	
 <link  rel="stylesheet" href="christyle.css">
 <style>
 body {margin:0;}
