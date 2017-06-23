@@ -5,25 +5,7 @@
 <style>
 body {margin:0;}
 
-<script>
-`$(function() {
-        var message = "Don't forget us";
-        var original;
-
-        $(window).focus(function() {
-            if (original) {
-                document.title = original;
-            }
-        }).blur(function() {
-            var title = $('title').text();
-            if (title != message) {
-                original = title;
-            }
-            document.title = message;
-        });
-    )
-};`    
-</script>  
+  
     
 ul {
     list-style-type: none;
@@ -74,7 +56,25 @@ footer{
 </head>
 <body>
 
+<script>
+`$(function() {
+        var message = "Don't forget us";
+        var original;
 
+        $(window).focus(function() {
+            if (original) {
+                document.title = original;
+            }
+        }).blur(function() {
+            var title = $('title').text();
+            if (title != message) {
+                original = title;
+            }
+            document.title = message;
+        });
+    )
+};`    
+</script>
   
 
 <ul>
