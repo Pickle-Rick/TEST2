@@ -2,7 +2,11 @@
 <html>
 <head>
 <title>About Us</title> 
- 
+<script>
+function tabText (text){
+document.title = text;
+}
+</script>
 <style>
 body {margin:0;}
 
@@ -56,8 +60,8 @@ footer{
 </style>
 </head>
 <body>
-
-
+<button oneclick="tabText ('&#128077; About Us')">Thumb</button>
+<button oneclick="tabText ('About Us')">Play</button>
   
 
 <ul>
