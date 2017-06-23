@@ -2,15 +2,13 @@
 <html>
 <head>
 <title>About Us</title> 
-<script>
-window.onblur = function tabText (text) {
-    alert"tabText ('&#128077; About Us')";
+<script>  
+window.onblur = function () {
+    document.title = "&#128077; About Us";
 }
-</script>   
-</script>
+</script>     
 <style>
 body {margin:0;}
-
   
     
 ul {
@@ -48,7 +46,6 @@ li a:hover {
 .active {
     color: green;
 }
-
 footer{
     padding: 1.5em;
     color: white;
@@ -84,7 +81,8 @@ footer{
   <p>Please look at our other pages they have very good information about apples.</p>
   <p>Also, something and other stuff.</p>
 </article>
-
+<button onclick=>Thumb</button>
+<button onclick="tabText ('About Us')">Play</button>
 </div>
 </div>
 <footer>Copyright &copy; Chris' Apples</footer>
