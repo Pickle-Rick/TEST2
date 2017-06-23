@@ -3,9 +3,10 @@
 <head>
 <title>About Us</title> 
 <script>
-function tabText (text){
-  document.title = text;
+window.onblur = function tabText (text) {
+    alert"tabText ('&#128077; About Us')";
 }
+</script>   
 </script>
 <style>
 body {margin:0;}
@@ -60,11 +61,7 @@ footer{
 </style>
 </head>
 <body>
-<script>  
-window.onblur = function () {
-    alert"tabText ('&#128077; About Us')";
-}
-</script>   
+  
 
 <ul>
  
