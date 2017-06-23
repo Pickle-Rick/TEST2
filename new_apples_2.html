@@ -57,24 +57,8 @@ footer{
 <body>
 
 <script>
-`$(function() {
-        var message = "Don't forget us";
-        var original;
-
-        $(window).focus(function() {
-            if (original) {
-                document.title = original;
-            }
-        }).blur(function() {
-            var title = $('title').text();
-            if (title != message) {
-                original = title;
-            }
-            document.title = message;
-        });
-    )
-};`    
-</script>
+ document.title = "New Document Title"
+ </script>
   
 
 <ul>
