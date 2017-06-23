@@ -2,6 +2,19 @@
 <html>
 <head>
 <title>Chris's Apples</title>
+<script>  
+window.onblur = function () {
+    document.title = "Come Back!";
+}
+setInterval(function() {
+  document.title = "Chris's Apples";
+}, 5000);   
+</script> 
+<script>
+window.onfocus = function () { 
+  document.title = "Chris's Apples";       
+}
+</script>     
 <style>
 body {margin:0;}
 ul {
