@@ -1,7 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Our Founder</title>    
+<title>Our Founder</title> 
+<script>  
+window.onblur = function () {
+    document.title = "Come Back!";
+}
+setInterval(function() {
+  document.title = "Our Founder";
+}, 5000);   
+</script> 
+<script>
+window.onfocus = function () { 
+  document.title = "Our Founder";       
+}
+</script>     
 <style>
 body {margin:0;}
 
