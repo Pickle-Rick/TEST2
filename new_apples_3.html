@@ -1,7 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Apple Stuff</title>    
+<title>Apple Stuff</title>
+<script>  
+window.onblur = function () {
+    document.title = "Come Back!";
+}
+setInterval(function() {
+  document.title = "About Us";
+}, 5000);   
+</script> 
+<script>
+window.onfocus = function () { 
+  document.title = "About Us";       
+}
+</script>     
 <script type="text/javascript">
 var image=new Image()
 image[0]=new Image()
