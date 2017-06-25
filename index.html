@@ -14,20 +14,24 @@ setInterval(function() {
 window.onfocus = function () { 
   document.title = "Chris's Apples";       
 }
-</script>  
+</script>     
 <style>
 body {margin:0;}
+
+
 ul {
+	display: inline;
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #333;
     position: fixed;
-    top: 0;
+    
     width: 100%;
     box-shadow: 0px 5px 5px #888888;
 }
+
 .content {
     max-width: 500px;
     margin: auto;
@@ -49,9 +53,41 @@ li a {
 li a:hover {
     color: rgb(0, 214, 0);
 }
+
+ul li2 {display: inline-block;}
+li2 {
+    float: left;
+}
+li2 a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 24px 16px;
+    text-decoration: none;
+    word-spacing: -7px;
+}
+li2 a:hover {
+    color: rgb(0, 214, 0);
+}
+
 .active {
     background-color: #696969;
 }
+ul li2 {display: inline-block; }
+ul li2:hover {background: black;}
+ul li2:hover ul {display: block;}
+ul li2 ul {
+background: black;
+  width: 200px;
+  display: none;
+}
+
+ul li2 ul li { 
+  background: black;
+  display: block; 
+}
+ul li2 ul li a {display:block !important; } 
+
 footer{
     padding: 1.5em;
     color: white;
@@ -73,12 +109,19 @@ footer{
   <li style="float:right"><a href="new_apples_5.html" style="font-size:21px;font-family:Courier;" >Contact Us </a></li>
   <li style="float:right"><a href="new_apples_4.html" style="font-size:21px;font-family:Courier;">Founder</a></li>
   <li style="float:right"><a href="new_apples_3.html" style="font-size:21px;font-family:Courier;">Apple Stuff</a></li>
-  <li style="float:right"><a href="new_apples_2.html" style="font-size:21px;font-family:Courier;">About Us</a></li>
+
+
+  <li2 style="float:right"><a href="new_apples_2.html" style="font-size:21px;font-family:Courier;">About Us</a><ul>
+        <li><a href="#" style="font-size:20px;font-family:Courier;">Meghan Butt</a></li>
+        <li><a href="#" style="font-size:20px;font-family:Courier;">Link Linker</a></li>
+        <li><a href="#" style="font-size:20px;font-family:Courier;">Link Linksten</a></li>
+      </ul>
+  </li2>
   
-  
+</ul> 
   
 
-</ul>
+
 
 <div style= "background-color:#f6f6f6;">
 
@@ -92,7 +135,7 @@ footer{
   <img 
   src="http://www.realfruitpower.com/ContentImage/ContentImage7-8-2014873623971.png" alt = "apple" />
   <div>
-<button type="button" onclick="alert('jk')">Buy Now!
+<button type="button" onclick="alert('Sorry, you have clicked the button')">Buy Now!
 </button>
 </div>  
 </article>
@@ -101,3 +144,4 @@ footer{
 <footer>Copyright &copy; Chris' Apples</footer>
 </body>
 </html>
+
