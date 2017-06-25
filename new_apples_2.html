@@ -21,6 +21,7 @@ window.onfocus = function () {
 body {margin:0;}
   
 li b {
+    
     display: block;
     color: white;
     text-align: center;
@@ -28,18 +29,18 @@ li b {
     text-decoration: none;
     word-spacing: -7px;
 }
-
 b:not(:hover) { 
 }
     
 ul {
+	display: inline;
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #333;
     position: fixed;
-    top: 0;
+   
     width: 100%;
     box-shadow: 0px 5px 5px #888888;
 }
@@ -64,9 +65,38 @@ li a {
 li a:hover {
     color: rgb(0, 214, 0);
 }
+ul li2 {display: inline-block;}
+li2 {
+    float: left;
+}
+li2 b {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 24px 16px;
+    text-decoration: none;
+    word-spacing: -7px;
+}
+li2 a:hover {
+    color: rgb(0, 214, 0);
+}
 .active {
     color: green;
+}    
+ul li2 {display: inline-block; }
+ul li2:hover {background: #2e2e2e;}
+ul li2:hover ul {display: block;}
+ul li2 ul {
+background: #2e2e2e;
+  width: 200px;
+  display: none;
 }
+ul li2 ul li { 
+  background: #2e2e2e;
+  display: block; 
+}
+ul li2 ul li a {display:block !important; } 
+
 footer{
     padding: 1.5em;
     color: white;
@@ -87,7 +117,11 @@ footer{
   <li style="float:right"><a href="new_apples_5.html" style="font-size:21px;font-family:Courier;">Contact Us</a></li>
   <li style="float:right"><a href="new_apples_4.html" style="font-size:21px;font-family:Courier;">Founder</a></li>
   <li style="float:right"><a href="new_apples_3.html" style="font-size:21px;font-family:Courier;">Apple Stuff</a></li>
-  <li style="float:right"><b href="new_apples_2.html" class="active" style="font-size:21px;font-family:Courier;">About Us</b></li>    
+  <li2 style="float:right"><b href="new_apples_2.html" class="active"  style="font-size:21px;font-family:Courier;">About Us</b><ul>
+        <li><a href="#" style="font-size:20px;font-family:Courier;">Link Link</a></li>
+        <li><a href="#" style="font-size:20px;font-family:Courier;">Link Linker</a></li>
+        <li><a href="#" style="font-size:20px;font-family:Courier;">Link Linksten</a></li>
+      </ul></li2>    
 
 </ul>
 
