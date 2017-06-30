@@ -15,7 +15,7 @@ if(10 < 3)
 }
 else
 {
-    bubbleShape =  U+1F34E;
+    bubbleShape =  'circle';
 }
 
 bounceBubbles();
