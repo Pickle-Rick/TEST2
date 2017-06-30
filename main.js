@@ -1,4 +1,4 @@
-var myName = "Copyright &copy; Chris' Apples";
+var myName = 'Copyright &copy; Chris\' Apples';
 
 var black = [255, 255, 255];
 var black = [255, 255, 255];
