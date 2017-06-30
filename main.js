@@ -1,11 +1,11 @@
 var myName = "Chris's Apples";
 
-var black = [0, 0, 0];
-var black = [0, 0, 0];
-var black = [0, 0, 0];
-var blue = [0,0, 0];
-var purple = [0, 0, 0];
-var letterColors = [black, black, black, black, black];
+var black = [255, 255, 255];
+var black = [255, 255, 255];
+var black = [255, 255, 255];
+var blue = [255, 255, 255];
+var purple = [255, 255, 255];
+var letterColors = [white, white, white, white, white];
 
 drawName(myName, letterColors);
 
