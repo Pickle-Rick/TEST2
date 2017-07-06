@@ -17,6 +17,50 @@ window.onfocus = function () {
 </script>     
 <style>
 body {margin:0;}
+
+@media screen and (max-width: 480px){
+.burger-nav{
+	display: block;
+    height: 40px;
+    width: 100%;
+    background: url(http://www.lakewoodcollege.edu/images/hamburger.png) no-repeat 98% center;
+    background-color: #333;
+    background-size: 40px 40px;
+    cursor: pointer;
+}
+
+header .wrapper{
+	width: 100%;
+    padding: 0;
+}
+
+header nav ul{
+	overflow: hidden;
+    background: #505050;
+    height: 0;
+}
+
+header nav ul.open{
+	height: auto;
+}
+
+header nav ul li{
+	float: none;
+    text-align: right;
+    width: 100%;
+    margin: 0;
+}
+
+header nav ul li a{
+	color: #fff;
+    padding: 10px;
+    boarder-bottom: 1px solid #404040;
+    display: block;
+    margin: 0;
+}
+
+}
+
     
 li b {
     display: block;
@@ -26,10 +70,8 @@ li b {
     text-decoration: none;
     word-spacing: -7px;
 }
-
 b:not(:hover) { 
 }    
-
 ul {
     list-style-type: none;
     margin: 0;
@@ -62,11 +104,9 @@ li a {
 li a:hover {
     color: rgb(0, 214, 0);
 }
-
 .active {
     color: green;
 }
-
 footer{
     padding: 1.5em;
     color: white;
@@ -81,8 +121,10 @@ footer{
 <body>
 
 
-  
-
+<header>
+<div class="wrapper">
+<nav>
+<a class= "burger-nav"></a>
 <ul>
     
   <li><a href="new_chris_apples.html"><img src="applers34.png" style="width:137.5px;height:30px;"></a></li>
@@ -90,9 +132,12 @@ footer{
   <li style="float:right"><b class="active" style="font-size:21px;font-family:Courier;" >Founder</b></li>
   <li style="float:right"><a href="new_apples_3.html" style="font-size:21px;font-family:Courier;">Apple Stuff</a></li>
   <li style="float:right"><a href="new_apples_2.html" style="font-size:21px;font-family:Courier;">About Us</a></li>  
- 
+   
 
 </ul>
+</nav>
+</div>
+</header>
 
 <div style= "background-color:#f6f6f6;">
 
