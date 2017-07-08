@@ -1,0 +1,12 @@
+.wrapper{
+	width: 100px;
+    max-width: 1180px;
+    padding: 0 10px;
+    margin: 0 auto;  
+}
+h1.logo{
+	background-image: url ();
+	background-repeat: no-repeat;
+    width: 100px;
+    text-indent: -100000px;
+}
