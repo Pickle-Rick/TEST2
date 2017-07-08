@@ -20,7 +20,7 @@ header nav{
 	float: right;
 }
 header nav h2{
-	text-index: -10000;
+	text-indent: -10000;
 	height: 0;
 	margin: 0;
 }
