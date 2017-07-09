@@ -31,8 +31,12 @@ header nav li{
 }
 header nav li a{
 	text-decoration: none;
-	color: #333;
 	font-size: 18px;
+	display: block;
+    color: white;
+    text-align: center;
+    padding: 24px 16px;
+    word-spacing: -7px;
 }
 
 
@@ -79,17 +83,9 @@ ul {
     margin-top:center;
     height: 600px;
 }
-li {
-    float: left;
-}
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 24px 16px;
-    text-decoration: none;
-    word-spacing: -7px;
-}
+
+    
+
 li a:hover {
     color: rgb(0, 214, 0);
 }
