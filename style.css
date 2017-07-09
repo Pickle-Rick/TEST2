@@ -16,6 +16,7 @@ h1.logo{
     text-indent: -10000px;
 	
 	height: 30px;
+	z-index: 2px;
 }
 
 header nav h2{
