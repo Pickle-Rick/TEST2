@@ -12,9 +12,10 @@ body{
 h1.logo{
 	background-image: url(applers34.png);
 	background-repeat: no-repeat;
-    width: 100px;
-    text-indent: -10000px;
+    width: 137.5px;
+    
 	float: left;
+	height: 30px;
 }
 
 header nav h2{
