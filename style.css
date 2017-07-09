@@ -1,5 +1,5 @@
 body{
-	font-family: Georgia;
+
 	margin: 0;
 }
 
@@ -29,12 +29,14 @@ header nav li{
 }
 header nav li a{
 	text-decoration: none;
-	font-size: 18px;
+	
 	display: block;
     color: white;
     text-align: center;
     padding: 24px 16px;
     word-spacing: -7px;
+font-size:21px;
+	font-family: Courier;
 }
 
 
