@@ -81,7 +81,9 @@ ul {
     margin-top:center;
     height: 600px;
 }
-
+header nav{
+	float: right;
+}
     
 
 li a:hover {
