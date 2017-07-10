@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+<title>Our Founder</title> 
+<script>  
+window.onblur = function () {
+    document.title = "Come Back!";
+}
+setInterval(function() {
+  document.title = "Our Founder";
+}, 5000);   
+</script> 
+<script>
+window.onfocus = function () { 
+  document.title = "Our Founder";       
+}
+</script>  
+<style>
+body {margin:0;}
+@media screen and (max-width: 480px){ 
+a.burger-nav{
+	position: left;
+    display: block;
+    height: 55px;
+    width: 52%;
+    background: url(applers34.png) no-repeat left;	
+    background-color: #333;
+    background-size: 150px 55px;
+    cursor: pointer;
+    box-shadow: 0px 5px 5px #888888;
+    position: fixed;	
+}
+b.burger-nav{
+	position: absolute;
+    top: 0px;
+    right: 0px;
+    display: block;
+    height: 55px;
+    width: 50%;
+    background: url(http://www.lakewoodcollege.edu/images/hamburger.png) no-repeat 98% center;		
+    background-color: #333;
+    background-size: 55px 55px;
+    cursor: pointer;
+    box-shadow: 6px 5px 5px #888888;
+    position: fixed;	
+    
+}
+.hide{
+  display:none;  
+}   
+header .wrapper{
+    width: 100%;
+    padding: 0;
+    
+}
+header nav ul{
+	flex-direction: column-reverse;
+    display:flex;
+    overflow: hidden;
+    background: #333;
+    margin-top: 55.2px;
+    width: 50%;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    //height: 0;
+}
+header nav ul.open{
+	height: auto;
+}
+header nav ul li{
+	float: none;
+    text-align: right;
+    width: 100%;
+    margin: 0; 
+}
+header nav ul li a.second-a{
+	color: #fff;
+    padding: 10px;
+    boarder-bottom: 1px solid #404040;
+    display: block;
+    margin: 0;
+    flex-direction: row-reverse;
+    display:flex;
+}
+a.second-a:not(:hover) { 
+}
+header nav ul li b{
+    color: #fff;
+    padding: 10px;
+    boarder-bottom: 1px solid #404040;
+    display: block;
+    margin: 0;
+    flex-direction: row-reverse;
+    display:flex;
+}
+}   
+li b {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 24px 16px;
+    text-decoration: none;
+    word-spacing: -7px;
+    cursor: pointer;
+}
+b:not(:hover) { 
+}    
+ul {
+	float: right;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0px 5px 5px #888888;
+}
+.content {
+	  max-width: 500px;
+    margin: auto;
+    padding:80px;
+    margin-top:center;
+    height: 600px;
+}
+li {
+   float: right;
+}
+
+li a.second-a { 
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 24px 16px;
+    text-decoration: none;
+    word-spacing: -7px;
+}
+li a:hover {
+    color: rgb(0, 214, 0);
+}
+.active {
+    color: green;
+}
+footer{
+    padding: 1.5em;
+    color: white;
+    background-color: #1f1f1f;
+    clear: left;
+    text-align: center;
+    bottom:0;left:7.5px;right:7.5px;
+    
+}
+</style>
+</head>
+<body>
+
+
+<header>
+<div class="wrapper">
+<nav>
+<a class="burger-nav" href="new_chris_apples.html"></a>
+<b class="burger-nav"></b>
+<ul>
+    
+  <li class="hide" style="float:left"><a href="new_chris_apples.html"><img src="applers34.png" alt="Home" style="16px;width:340px;height:70px;"></a></li>
+  <li><a class="second-a" href="new_apples_5.html" style="font-size:21px;font-family:Courier;">Contact Us</a></li>
+  <li><b class="active" style="font-size:21px;font-family:Courier;">Founder</b></li>
+  <li><a class="second-a" href="new_apples_3.html" style="font-size:21px;font-family:Courier;">Apple Stuff</a></li>
+  <li><a class="second-a" href="new_apples_2.html" style="font-size:21px;font-family:Courier;">About Us</a></li>  
+
+   
+
+</ul>
+</nav>
+</div>
+</header>
+
+<div style= "background-color:#f6f6f6;">
+
+<div class="content">
+
+
+<article>
+  <h1>Founder</h1>
+    <img src="https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAURAAAAJDRhMDYyNmVmLWRiNTQtNDhmYy1iMzU4LWZhNDU5ZTM0YTg4Yg.jpg" alt = "founder" /> 
+  <p>Our founder Chris is very cool. He likes apples because he was born part farmer.</p>
+  <p>Now he has a website about apples.</p>
+    
+</article>
+</div>
+</div>
+<footer>Copyright &copy; Chris' Apples</footer>
+</body>
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="main2.js"></script>
+</html>
