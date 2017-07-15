@@ -49,6 +49,21 @@ b.burger-nav{
     z-index: 6;
     -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
+.shadow{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    display: block;
+    height: 55px;
+    width: 100%;	
+    background-color: #333;
+    background-size: 55px 55px;
+    cursor: pointer;
+    box-shadow: 0px 5px 5px #888888;
+    position: fixed;
+    z-index: 2;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
 .hide{
   display:none;  
 }   
@@ -57,13 +72,13 @@ header .wrapper{
     padding: 0;
 }
 header nav ul{
-	flex-direction: column-reverse;
+    flex-direction: column-reverse;
     display:flex;
     overflow: hidden;
     background: #333;
     margin-top: 55.2px;
     //height: 0;
-    z-index: 1;
+    z-index: 4;
 }
 header nav ul.open{
 	margin-top: 55.2px;
@@ -160,6 +175,7 @@ footer{
 <nav>
 <a class="burger-nav" href="new_chris_apples.html"></a>
 <b class="burger-nav"></b>
+<b class="shadow"></b>
 <ul class="butt">
     
   <li class="hide" style="float:left"><a href="new_chris_apples.html"><img src="applers34.png" alt="Home" style="16px;width:340px;height:70px;"></a></li>
