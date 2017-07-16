@@ -18,7 +18,7 @@ window.onfocus = function () {
 </script>  
 <style>
 body {margin:0;}
-@media screen and (max-width: 480px){ 
+@media screen and (max-width: 900px){ 
 a.burger-nav{
     position: left;
     display: block;
@@ -64,6 +64,9 @@ b.burger-nav{
     z-index: 2;
     -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
+.notButt{
+  height: 0;
+}
 .hide{
   display:none;  
 }   
@@ -72,13 +75,13 @@ header .wrapper{
     padding: 0;
 }
 header nav ul{
-    flex-direction: column-reverse;
+	flex-direction: column-reverse;
     display:flex;
     overflow: hidden;
     background: #333;
     margin-top: 55.2px;
     //height: 0;
-    z-index: 4;
+    z-index: 5;
 }
 header nav ul.open{
 	margin-top: 55.2px;
@@ -92,7 +95,7 @@ header nav ul li{
     margin: 0; 
 }
 header nav ul li a.second-a{
-    color: #fff;
+	color: #fff;
     padding: 10px;
     boarder-bottom: 1px solid #404040;
     display: block;
@@ -120,7 +123,7 @@ li b {
 b:not(:hover) { 
 }    
 ul {
-    float: right;
+	float: right;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -166,7 +169,6 @@ footer{
     
 }
 </style>
-</head>
 <body>
 
 
@@ -176,17 +178,26 @@ footer{
 <a class="burger-nav" href="new_chris_apples.html"></a>
 <b class="burger-nav"></b>
 <b class="shadow"></b>
-<ul class="butt">
-    
+<ul>
+ <div class="butt">    
   <li class="hide" style="float:left"><a href="new_chris_apples.html"><img src="applers34.png" alt="Home" style="16px;width:340px;height:70px;"></a></li>
   <li><a class="second-a" href="new_apples_5.html" style="font-size:21px;font-family:Courier;">Contact Us</a></li>
   <li><b class="active" style="font-size:21px;font-family:Courier;">Founder</b></li>
   <li><a class="second-a" href="new_apples_3.html" style="font-size:21px;font-family:Courier;">Apple Stuff</a></li>
   <li><a class="second-a" href="new_apples_2.html" style="font-size:21px;font-family:Courier;">About Us</a></li>  
-
-   
-
+ </div>
 </ul>
+
+<ul class="notButt">
+    
+  <li class="hide" style="float:left"><a href="new_chris_apples.html"><img src="applers34.png" alt="Home" style="16px;width:340px;height:70px;"></a></li>
+  <li><a class="second-a" href="new_apples_5.html" style="font-size:21px;font-family:Courier;">Contact Us</a></li>
+  <li><b class="active" style="font-size:21px;font-family:Courier;">Founder</b></li>
+  <li><a class="second-a" href="new_apples_3.html" style="font-size:21px;font-family:Courier;">Apple Stuff</a></li>
+  <li><a class="second-a" href="new_apples_2.html" style="font-size:21px;font-family:Courier;">About Us</a></li> 
+  
+</ul>
+
 </nav>
 </div>
 </header>
@@ -197,16 +208,16 @@ footer{
 
 
 <article>
-  <h1>Founder</h1>
+	<h1>Founder</h1>
     <img src="https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAURAAAAJDRhMDYyNmVmLWRiNTQtNDhmYy1iMzU4LWZhNDU5ZTM0YTg4Yg.jpg" alt = "founder" /> 
   <p>Our founder Chris is very cool. He likes apples because he was born part farmer.</p>
   <p>Now he has a website about apples.</p>
-    
-</article>
+</article>	
 </div>
 </div>
-<footer>Copyright &copy; Chris' Apples</footer>
-</body>
 <script src='https://code.jquery.com/jquery-3.1.0.min.js'></script>
 <script src="main3.js"></script>
 </html>
+	
+	
+	
