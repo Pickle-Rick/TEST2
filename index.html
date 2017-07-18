@@ -1,45 +1,176 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>Chris's Apples</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+<title>Our Founder</title> 
 <script>  
 window.onblur = function () {
     document.title = "Come Back!";
 }
 setInterval(function() {
-  document.title = "Chris's Apples";
+  document.title = "Our Founder";
 }, 5000);   
 </script> 
 <script>
 window.onfocus = function () { 
-  document.title = "Chris's Apples";       
+  document.title = "Our Founder";       
 }
-</script>     
+</script>
 <style>
 body {margin:0;}
+@media screen and (max-width: 900px){ 
+a.burger-nav{
+    display: block;
+    height: 55px;
+    top: 0;
+    left: 0;
+    width: 52%;
+    background: url(applers34.png) no-repeat left;	
+    //background-color: #333;
+    background-size: 150px 55px;
+    cursor: pointer;
+    //box-shadow: 0px 5px 5px #888888;
+    position: fixed; 
+    z-index: 6;  
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+ }
+.container {
+    display: inline-block;
+    cursor: pointer;
+    z-index: 20;
+    background: no-repeat 98% center;		
+    background-color: #333;
+    background-size: 55px 55px;
+    top: 0px;
+    right: 0px;
+    display: block;
+    height: 55px;
+    //box-shadow: 6px 5px 5px #888888;
+    position: fixed;
+    z-index: 6;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    padding-right: .1cm;
+}
+.bar1, .bar2, .bar3 {
+    border-radius: 25px;
+    width: 50px;
+    height: 9px;
+    background-color: white;
+    margin: 7px 0;
+    transition: 0.6s;
+    z-index: 20;
+}
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-50deg) translate(-15px, 6px) ;
+}
+.change .bar2 {opacity: 0;}
+.change .bar3 {
+    -webkit-transform: rotate(180deg) translate(-8px, -8px) ;
+    transform: rotate(48deg) translate(-15px, -8px) ;
+}
+.shadow{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    display: block;
+    height: 55px;
+    width: 100%;	
+    background-color: #333;
+    background-size: 55px 55px;
+    //cursor: pointer;
+    box-shadow: 0px 5px 5px #888888;
+    position: fixed;
+    z-index: 2;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+.notButt{
+  height: 0;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  display: none;
+}
+.hide{
+  display:none;  
+}   
+header .wrapper{
+    width: 100%;
+    padding: 0;
+}
+header nav ul{
+	flex-direction: column-reverse;
+    display:flex;
+    overflow: hidden;
+    background: #333;
+    margin-top: 55.2px;
+    //height: 0;
+    z-index: 5;
+}
+header nav ul.open{
+	margin-top: 55.2px;
+  height: auto;
+  overflow: hidden;
+}
+header nav ul li{
+	  float: none;
+    text-align: right;
+    width: 100%;
+    margin: 0; 
+}
+header nav ul li a.second-a{
+	  color: #fff;
+    padding: 10px;
+    boarder-bottom: 1px solid #404040;
+    display: block;
+    margin: 0;
+}
+a.second-a:not(:hover) { 
+}
+header nav ul li b{
+    color: #fff;
+    padding: 10px;
+    boarder-bottom: 1px solid #404040;
+    display: block;
+    margin: 0;
+}
+article img{
+  height: 200px;
+}
+} 
+	
+li b {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 24px 16px;
+    text-decoration: none;
+    word-spacing: -7px;
+    cursor: pointer;
+}
+b:not(:hover) { 
+}    
 ul {
-	display: inline;
+	float: right;
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #333;
     position: fixed;
-    
+    top: 0;
     width: 100%;
     box-shadow: 0px 5px 5px #888888;
 }
 .content {
+	
     max-width: 500px;
     margin: auto;
     padding:80px;
     margin-top:center;
-    height:600px;
+    height: 600px;
 }
 li {
-    float: left;
+   float: right;
 }
-li a {
+li a.second-a { 
     display: block;
     color: white;
     text-align: center;
@@ -50,40 +181,9 @@ li a {
 li a:hover {
     color: rgb(0, 214, 0);
 }
-ul li2 {display: inline-block;}
-li2 {
-    float: left;
-}
-li2 a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 24px 16px;
-    text-decoration: none;
-    word-spacing: -7px;
-}
-li2 a:hover {
-    color: rgb(0, 214, 0);
-}
 .active {
-    background-color: #696969;
+    color: green;
 }
-ul li2 {display: inline-block; }
-ul li2:hover {
-	background: #2e2e2e;
-}
-ul li2:hover ul {display: block;}
-ul li2 ul {
-	background: #2e2e2e;
-  width: 200px;
-  display: none;
-  
-}
-ul li2 ul li { 
-  background: #2e2e2e;
-  display: block;
-}
-ul li2 ul li a {display:block !important; } 
 footer{
     padding: 1.5em;
     color: white;
@@ -94,29 +194,46 @@ footer{
     
 }
 </style>
-</head>
+</head>	
 <body>
+<header>
+<div class="wrapper">
+<nav>
+<a class="burger-nav" href="home.html"></a>
+<b class="burger-nav">
+<div class="container" onclick="myFunction(this)">
+  <div class="bar1"></div>
+  <div class="bar2"></div>
+  <div class="bar3"></div>
+</div>
+</b>
 
-
-  
-
+<b class="shadow"></b>
 <ul>
-  <li><a href="new_chris_apples.html"><img src="applers34.png" style="width:137.5px;height:30px;"></a></li>
-  <li style="float:right"><a href="new_apples_5.html" style="font-size:21px;font-family:Courier;" >Contact Us </a></li>
-  <li style="float:right"><a href="new_apples_4.html" style="font-size:21px;font-family:Courier;">Founder</a></li>
-  <li style="float:right"><a href="new_apples_3.html" style="font-size:21px;font-family:Courier;">Apple Stuff</a></li>
+ <div class="butt">    
+  <li class="hide" style="float:left"><a href="home.html"><img src="applers34.png" alt="Home" style="16px;width:340px;height:70px;"></a></li>
+  <li><a class="second-a" href="about.html" style="font-size:21px;font-family:Courier;">About Us</a></li> 
+  <li><a class="second-a" href="applestuff.html" style="font-size:21px;font-family:Courier;">Apple Stuff</a></li>
+  <li><a class="second-a" href="founder.html" style="font-size:21px;font-family:Courier;">Founder</a></li>
+  <li><a class="second-a" href="contactus.html" style="font-size:21px;font-family:Courier;">Contact Us</a></li> 
+ </div>
+</ul>
 
+<ul> 
+<div class="notButt">
+    
+  <li class="hide" style="float:left"><a href="home.html"><img src="applers34.png" alt="Home" style="16px;width:340px;height:70px;"></a></li>
+  <li><a class="second-a" href="contactus.html" style="font-size:21px;font-family:Courier;">Contact Us</a></li>
+  <li><a class="second-a" href="founder.html" style="font-size:21px;font-family:Courier;">Founder</a></li>
+  <li><a class="second-a" href="applestuff.html" style="font-size:21px;font-family:Courier;">Apple Stuff</a></li>
+  <li><a class="second-a" href="about.html" style="font-size:21px;font-family:Courier;">About Us</a></li> 
 
-  <li2 style="float:right"><a href="new_apples_2.html" style="font-size:21px;font-family:Courier;">About Us</a><ul>
-        <li><a href="#" style="font-size:20px;font-family:Courier;">Link Link</a></li>
-        <li><a href="#" style="font-size:20px;font-family:Courier;">Link Linker</a></li>
-        <li><a href="#" style="font-size:20px;font-family:Courier;">Link Linksten</a></li>
-      </ul>
-  </li2>
-  
-</ul> 
-  
+ </div>
+</ul>
 
+</nav>
+</div>
+</header>
 
 
 <div style= "background-color: #f6f6f6;">
@@ -138,5 +255,12 @@ footer{
 </div>
 </div>
 <footer>Copyright &copy; Chris' Apples</footer>
+<script>
+function myFunction(x) {
+    x.classList.toggle("change");
+}
+</script>
 </body>
+<script src='https://code.jquery.com/jquery-3.1.0.min.js'></script>
+<script src="main3.js"></script>
 </html>
