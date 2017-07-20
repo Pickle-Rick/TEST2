@@ -65,23 +65,9 @@ window.onfocus = function () {
 
 <article>
 <h1>Contact Us</h1>
-      <div id="map"></div>
-    <script>
-      function initMap() {
-        var uluru = {lat: 40.980514, lng: -73.683929};
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 14,
-          center: uluru
-        });
-        var marker = new google.maps.Marker({
-          position: uluru,
-          map: map
-        });
-      }
-    </script>
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCPSLNRlZi4HT4V2vfhWchi8zIraA9dfaE&callback=initMap">
-    </script>	      
+      <div class="map-responsive">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24101.66395940645!2d-73.72020696159419!3d40.96597532997622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2911ddbd632c5%3A0x44efe8ba9096112!2s6+Harding+Dr%2C+Rye%2C+NY+10580!5e0!3m2!1sen!2sus!4v1500521835848" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
     <h12>Headquarters</h12>
     <p>Chris' Apples<br>666 Madison Ave, 99th Floor<br>Rye, NY 10017</p>
   <h12>Hours</h12>
