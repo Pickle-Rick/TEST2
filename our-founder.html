@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>	
+<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+<title>Our Founder</title> 
+<script>  
+window.onblur = function () {
+    document.title = "Come Back!";
+}
+setInterval(function() {
+  document.title = "Our Founder";
+}, 5000);   
+</script> 
+<script>
+window.onfocus = function () { 
+  document.title = "Our Founder";       
+}
+</script>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>	
+<body>
+<header>
+<div class="wrapper">
+<nav>
+<a class="burger-nav" href="home.html"></a>
+<b class="burger-nav">
+<div class="container" onclick="myFunction(this)">
+  <div class="bar1"></div>
+  <div class="bar2"></div>
+  <div class="bar3"></div>
+</div>
+</b>
+
+<b class="shadow"></b>
+<ul>
+ <div class="butt">    
+  <li class="hide" style="float:left"><a href="home.html"><img src="applers34.png" alt="Home" style="16px;width:340px;height:70px;"></a></li>
+  <li><a class="second-a" href="about.html" style="font-size:21px;font-family:Courier;">About Us</a></li> 
+  <li><a class="second-a" href="applestuff.html" style="font-size:21px;font-family:Courier;">Apple Stuff</a></li>
+  <li><b class="active" style="font-size:21px;font-family:Courier;">Founder</b></li>
+  <li><a class="second-a" href="contactus.html" style="font-size:21px;font-family:Courier;">Contact Us</a></li> 
+ </div>
+</ul>
+
+<ul> 
+<div class="notButt">
+    
+  <li class="hide" style="float:left"><a href="home.html"><img src="applers34.png" alt="Home" style="16px;width:340px;height:70px;"></a></li>
+  <li><a class="second-a" href="contactus.html" style="font-size:21px;font-family:Courier;">Contact Us</a></li>
+  <li><b class="active" style="font-size:21px;font-family:Courier;">Founder</b></li>
+  <li><a class="second-a" href="applestuff.html" style="font-size:21px;font-family:Courier;">Apple Stuff</a></li>
+  <li><a class="second-a" href="about.html" style="font-size:21px;font-family:Courier;">About Us</a></li> 
+
+ </div>
+</ul>
+
+</nav>
+</div>
+</header>
+
+<div style= "background-color:#f6f6f6;">
+
+<div class="content">
+
+
+<article>
+  <h1>Founder</h1>
+    <img src="https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAURAAAAJDRhMDYyNmVmLWRiNTQtNDhmYy1iMzU4LWZhNDU5ZTM0YTg4Yg.jpg" alt = "founder" /> 
+  <p>Our founder Chris is very cool. He likes apples because he was born part farmer.</p>
+  <p>Now he has a website about apples.</p>
+    
+</article>
+</div>
+</div>
+<footer>Copyright &copy; Chris' Apples</footer>
+<script>
+function myFunction(x) {
+    x.classList.toggle("change");
+}
+</script>
+</body>
+<script src='https://code.jquery.com/jquery-3.1.0.min.js'></script>
+<script src="main3.js"></script>
+</html>
