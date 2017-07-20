@@ -117,6 +117,10 @@ header nav ul li b{
 .bigApple {
   height: 200px;
 }
+.slideShow {
+  height: 120px;
+  width: 225px;
+}
 } 
 h12{
 	font-size: 2em;
