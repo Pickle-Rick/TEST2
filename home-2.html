@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>	
+<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+<title>Our Founder</title> 
+<script>  
+window.onblur = function () {
+    document.title = "Come Back!";
+}
+setInterval(function() {
+  document.title = "Our Founder";
+}, 5000);   
+</script> 
+<script>
+window.onfocus = function () { 
+  document.title = "Our Founder";       
+}
+</script>
+</head>	
+<body>
+<header>
+<div class="wrapper">
+<nav>
+<a class="burger-nav" href="home.html"></a>
+<b class="burger-nav">
+<div class="container" onclick="myFunction(this)">
+  <div class="bar1"></div>
+  <div class="bar2"></div>
+  <div class="bar3"></div>
+</div>
+</b>
+
+<b class="shadow"></b>
+<ul>
+ <div class="butt">    
+  <li class="hide" style="float:left"><a href="home.html"><img src="applers34.png" alt="Home" style="16px;width:340px;height:70px;"></a></li>
+  <li><a class="second-a" href="about.html" style="font-size:21px;font-family:Courier;">About Us</a></li> 
+  <li><a class="second-a" href="applestuff.html" style="font-size:21px;font-family:Courier;">Apple Stuff</a></li>
+  <li><a class="second-a" href="founder.html" style="font-size:21px;font-family:Courier;">Founder</a></li>
+  <li><a class="second-a" href="contactus.html" style="font-size:21px;font-family:Courier;">Contact Us</a></li> 
+ </div>
+</ul>
+
+<ul> 
+<div class="notButt">
+    
+  <li class="hide" style="float:left"><a href="home.html"><img src="applers34.png" alt="Home" style="16px;width:340px;height:70px;"></a></li>
+  <li><a class="second-a" href="contactus.html" style="font-size:21px;font-family:Courier;">Contact Us</a></li>
+  <li><a class="second-a" href="founder.html" style="font-size:21px;font-family:Courier;">Founder</a></li>
+  <li><a class="second-a" href="applestuff.html" style="font-size:21px;font-family:Courier;">Apple Stuff</a></li>
+  <li><a class="second-a" href="about.html" style="font-size:21px;font-family:Courier;">About Us</a></li> 
+
+ </div>
+</ul>
+
+</nav>
+</div>
+</header>
+
+
+<div style= "background-color: #f6f6f6;">
+
+<div class="content">
+
+
+<article>
+  <h1>Apples</h1>
+  <p>Apples are good for your knees.</p>
+  <p>There are many types of apples. Below is a picture of an apple.ds ssdd ds dsd</p>
+  <img 
+  src="http://www.realfruitpower.com/ContentImage/ContentImage7-8-2014873623971.png" alt = "apple" class="bigApple" />
+  <div>
+<button type="button" onclick="alert('Sorry, you have clicked the button')">Buy Now!
+</button>
+</div>  
+</article>
+</div>
+</div>
+<footer>Copyright &copy; Chris' Apples</footer>
+<script>
+function myFunction(x) {
+    x.classList.toggle("change");
+}
+</script>
+</body>
+<script src='https://code.jquery.com/jquery-3.1.0.min.js'></script>
+<script src="main3.js"></script>
+</html>
