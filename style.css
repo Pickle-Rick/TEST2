@@ -114,6 +114,9 @@ header nav ul li b{
     display: block;
     margin: 0;
 }
+.bigApple {
+  height: 200px;
+}
 } 
 h12{
 	font-size: 2em;
