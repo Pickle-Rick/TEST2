@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+<title>Our Founder</title> 
+<script>  
+window.onblur = function () {
+    document.title = "Come Back!";
+}
+setInterval(function() {
+  document.title = "Our Founder";
+}, 5000);   
+</script> 
+<script>
+window.onfocus = function () { 
+  document.title = "Our Founder";       
+}
+</script>
+<script type="text/javascript">
+var image=new Image()
+image[0]=new Image()
+image[0].src="http://www.mylittlegreekfoodbook.com/wp-content/uploads/2013/01/apples_header1.jpg" 
+image[1]=new Image()
+image[1].src="http://www.mylittlegreekfoodbook.com/wp-content/uploads/2013/01/apple.jpg"
+image[2]=new Image()
+image[2].src="http://www.mylittlegreekfoodbook.com/wp-content/uploads/2013/01/raisins1.jpg"
+</script>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>	
+<body>
+<header>
+<div class="wrapper">
+<nav>
+<a class="burger-nav" href="home.html"></a>
+<b class="burger-nav">
+<div class="container" onclick="myFunction(this)">
+  <div class="bar1"></div>
+  <div class="bar2"></div>
+  <div class="bar3"></div>
+</div>
+</b>
+
+<b class="shadow"></b>
+<ul>
+ <div class="butt">    
+  <li class="hide" style="float:left"><a href="home.html"><img src="applers34.png" alt="Home" style="16px;width:340px;height:70px;"></a></li>
+  <li><a class="second-a" href="about.html" style="font-size:21px;font-family:Courier;">About Us</a></li> 
+  <li><b class="active" style="font-size:21px;font-family:Courier;">Apple Stuff</b></li>
+  <li><a class="second-a" href="founder"style="font-size:21px;font-family:Courier;">Founder</a></li>
+  <li><a class="second-a" href="contactus.html" style="font-size:21px;font-family:Courier;">Contact Us</a></li> 
+ </div>
+</ul>
+
+<ul> 
+<div class="notButt">
+    
+  <li class="hide" style="float:left"><a href="home.html"><img src="applers34.png" alt="Home" style="16px;width:340px;height:70px;"></a></li>
+  <li><a class="second-a" href="contactus.html" style="font-size:21px;font-family:Courier;">Contact Us</a></li>
+  <li><a class="second-a" href="founder"style="font-size:21px;font-family:Courier;">Founder</a></li>
+  <li><b class="active" style="font-size:21px;font-family:Courier;">Apple Stuff</b></li>
+  <li><a class="second-a" href="about.html" style="font-size:21px;font-family:Courier;">About Us</a></li> 
+
+ </div>
+</ul>
+
+</nav>
+</div>
+</header>
+
+<div style= "background-color:#f6f6f6;">
+
+<div class="content">
+
+
+<article>
+  <h1>&#127826 Apple Stuff &#127826</h1>
+  <p>This is stuff about apples.</p>
+  <p>There are green apples, red apples, yellow apples, as well as different varities of organic apples.</p>
+  <img src="img1.jpg" id="slide" width=450 height="200" alt="image"/>
+
+<script type="text/javascript">
+var step=0
+function slideit(){
+if (!document.images)
+return
+document.getElementById('slide').src= image[step].src
+if (step<2)
+step++
+else
+step=0
+setTimeout("slideit()",2500)
+}
+slideit()
+</script>
+  <p>Apples are neat.</p>
+</article>
+</div>
+</div>
+<footer>Copyright &copy; Chris' Apples</footer>
+<script>
+function myFunction(x) {
+    x.classList.toggle("change");
+}
+</script>
+<script src='https://code.jquery.com/jquery-3.1.0.min.js'></script>
+<script src="main3.js"></script>
+</html>
