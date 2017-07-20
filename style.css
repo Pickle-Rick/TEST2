@@ -127,11 +127,24 @@ h12{
 	font-size: 2em;
 	margin-bottom:0em;
 }
-#map { 
-	width: 250px;
-	height: 180px;
-	margin-right: 5cm;
-	z-index: 1;
+//#map { 
+	//width: 250px;
+	//height: 180px;
+	//margin-right: 5cm;
+	//z-index: 1;
+//}
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
 }
 li b {
     display: block;
