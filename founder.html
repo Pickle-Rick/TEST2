@@ -8,8 +8,8 @@ function changeTitle() {
 }	
 window.onblur = function () {
     for (x=0;x<3;x++) {	
+	setInterval("changeTitle()", 1000);    
         document.title = "Come Back!";
-        setInterval("changeTitle()", 1000);
     }	    
 }
 </script> 
