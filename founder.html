@@ -3,13 +3,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">	
 <title>Our Founder</title> 
 <script>  
-window.onblur = function () {
-    document.title = "Come Back!";
-}
 function changeTitle() {
     document.title = "Our Founder";
+}	
+window.onblur = function () {
+    document.title = "Come Back!";
+    setInterval("changeTitle()", 1000);
 }
-window.onblur = setInterval("changeTitle()", 1000);
 </script> 
 <script>
 window.onfocus = function () { 
