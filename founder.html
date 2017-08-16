@@ -2,13 +2,12 @@
 <html>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">	
 <title>Our Founder</title> 
-<script type="text/javascript">  
-function changeTitle() {
-    document.title = "Our Founder";
-}	
+<script type="text/javascript">  	
 window.onblur = function () {
-    setInterval("changeTitle()", 1000);
+    for(x=0;x<10;x++){
     document.title = "Come Back!";
+    document.title = "Our Founder";	    
+    }  
 }
 </script> 
 <script>
