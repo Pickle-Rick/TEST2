@@ -6,9 +6,10 @@
 window.onblur = function () {
     document.title = "Come Back!";
 }
-setInterval(function() {
-  document.title = "Our Founder";
-}, 5000);   
+function changeTitle(){
+    document.title = "Our Founder";
+}
+setInterval("changeTitle()", 5000);
 </script> 
 <script>
 window.onfocus = function () { 
